@@ -1,1 +1,122 @@
-@charset "utf-8";
+@charset "UTF-8";
+
+:root{
+    --main-color: #EB51C2;
+}
+
+/*全体*/
+
+body{
+    font-family:'Josefin Sans', sans-serif, 'Montserrat', 'Noto Sans JP', Arial, "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans", Meiryo,;
+    font-size: 16px;
+    color: #111111;
+    font-feature-settings: "palt";
+}
+
+img{
+    max-width: 100%;
+    marigin: 0 auto;
+    vertical-align: bottom;
+}
+
+/*レイアウト*/
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.section{
+    padding: 20px 0;
+}
+
+.section--color-reverse .section__inner{
+    padding: 40px 0;
+    background-color: var(--main-color);
+}
+
+.section__heading{
+    margin-bottom: 30px;
+}
+
+.section-border-top{
+    transform:translateY(1px);
+}
+
+.section-border-bottom{
+    transform:translateY(-1px);
+}
+
+/*スクロールエフェクト*/
+
+.fedeUpEffect{
+    opacity: 0;
+}
+
+.fadeUp{
+    opacity: 0;
+    animation-name: fadeUp;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeUp{
+    from{
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*ボタン*/
+
+.btn{
+    display: inline-block;
+    max-width: 300px;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: var(--main-color);
+    transition: all 0.3s;
+}
+
+.btn--color-reverse{
+    background-color: #FFFFFF;
+    color: var(--main-color);
+}
+
+.btn--center{
+    display: block;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+/*見出し*/
+.heading-primary{
+    font-size: 40px;
+    line-height: 1;
+    color: #111111;
+}
+
+.heading-primary__subtitle{
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--main-color);
+    margin-top: 10px;
+}
+
+.heading-primary--color-reverse,
+.heading-primary--color-reverse .heading-primary__subtitle{
+    color: #FFFFFF;
+}
