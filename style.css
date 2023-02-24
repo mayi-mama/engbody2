@@ -42,11 +42,13 @@ img{
 }
 
 .section-border-top{
-    transform:translateY(1px);
+    transform:translateY(35px);
+    width: 100%;
 }
 
 .section-border-bottom{
-    transform:translateY(-1px);
+    transform:translateY(-35px);
+    width: 100%;
 }
 
 /*スクロールエフェクト*/
@@ -119,4 +121,39 @@ img{
 .heading-primary--color-reverse,
 .heading-primary--color-reverse .heading-primary__subtitle{
     color: #FFFFFF;
+}
+
+/*ヘッダー*/
+.header{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 100;
+    padding: 0 20px;
+    transition: 0.3s;
+}
+
+.header__logo{
+    line-height: 1;
+}
+
+.header__cta{
+    display: none;
+}
+
+.header__cta-btn{
+    font-size: 12px;
+    padding: 10px 15px;
+}
+
+.header--active{
+    background-color: #FFFFFF;
+    box-shadow: 0 3px 6px rgb(0, 0, 0/ 5%) ;
+}
+
+.header--active .header__cta{
+    display: block;
 }
