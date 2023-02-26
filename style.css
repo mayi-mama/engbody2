@@ -321,3 +321,52 @@ img{
     font-size: 15px;
     line-height: 1.8;
 }
+
+/*about section*/
+
+.about__list{
+    display:grid;
+    row-gap: 40px;
+}
+
+.about-box__img-wrapper{
+    width: 100%;
+}
+
+.about-box__desc{
+    position: relative;
+    margin: -10px 20px;
+    padding: 40px 30px 30px 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #FFFFFF;
+}
+
+.about-box__subtitle{
+    font-size: 18px;
+    color: var(--main-color);
+    margin-bottom: 15px;
+}
+
+.about-box__title{
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-bottom: 22px;
+}
+
+.about-box__text{
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.about-box__subtitle-food{
+    color:#00B21B;
+}
+
+.about__btn{
+    margin-top: 40px;
+    padding: 20px 0;
+}
+
+
