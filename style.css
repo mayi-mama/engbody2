@@ -288,3 +288,36 @@ img{
 .bgLRextendTrigger{
     opacity: 0;
 }
+
+/*イントロ*/
+.intro{
+    margin-top: -20px;
+    padding: 0 20px;
+}
+
+.intro__title{
+    text-align: center;
+    color: var(--main-color);
+    font-size: 56px;
+    font-weight: 700;
+    font-style: Italic;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.intro__subtitle{
+    text-align:center;
+    font-size: 16px;
+    margin-bottom: 23px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+.intro__subtitle span{
+    color: var(--main-color);
+}
+
+.intro__textArea{
+    font-size: 15px;
+    line-height: 1.8;
+}
