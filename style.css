@@ -52,8 +52,7 @@ img{
 }
 
 /*スクロールエフェクト*/
-
-.fedeUpEffect{
+.fadeUpEffect{
     opacity: 0;
 }
 
@@ -74,7 +73,6 @@ img{
         transform: translateY(0);
     }
 }
-
 /*ボタン*/
 
 .btn{
@@ -369,4 +367,77 @@ img{
     padding: 20px 0;
 }
 
+
+/*トレーナー*/
+.tab-area{
+    display:grid;
+    margin-bottom: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    cursor: pointer;
+}
+
+.tab{
+    text-align: center;
+    font-size: 16px;
+    color: #FFFFFF;
+    padding: 5px 0 10px 0;
+}
+
+.tab.tab--active{
+    position: relative;
+    font-weight: bold;
+    color:#FFFFFF;
+}
+
+.tab.tab--active::before{
+    position: absolute;
+    content: "";
+    bottom:0;
+    left:0;
+    width: 100%;
+    height: 2px;
+    background-color: #FFFFFF;
+    border-radius: 3px;
+}
+
+.tab-content {
+    display: none;
+    transition: all 1s;
+    animation-name: fade-in;
+    animation-duration: 0.5s;
+}
+
+.tab-content.tab--active{
+    display: block;
+}
+
+
+@keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+.person-list{
+    display:grid;
+    row-gap: 15px;
+}
+
+.person-box{
+    overflow:hidden;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+}
+
+.person-box__body{
+    padding: 20px;
+}
+
+.person-box__text{
+    font-size: 14px;
+    line-height: 1.5;
+}
 
