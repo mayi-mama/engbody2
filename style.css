@@ -441,3 +441,43 @@ img{
     line-height: 1.5;
 }
 
+/*スタジオ*/
+.studio-wrap{
+    position:relative;
+}
+
+.swiper-button-prev {
+    left: -20px;
+}
+
+.swiper-button-next {
+    right: -20px;
+}
+
+.swiper-button-prev,
+.swiper-button-next{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after{
+    font-size: 25px;
+    color:var(--main-color);
+}
+
+.swiper-pagination-bullet-active{
+    background-color: var(--main-color);
+}
+
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: -30px;
+}
+
+
+

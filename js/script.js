@@ -32,6 +32,20 @@ $(function(){
         var index = $('.tab').index(this);
         $('.tab-content').eq(index).addClass('tab--active');
       });
+
+      /*swiper*/
+      const swiper = new Swiper(".swiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          type: "bullets",
+          clickable: "clickable",
+        },
+        loop: true,
+      });
     
 });
 
