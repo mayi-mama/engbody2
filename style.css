@@ -174,8 +174,7 @@ img{
 .mv__subtitle{
     font-size: min(3.5vw, 28px);
     font-weight: bold;
-    line-height: 1;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .mv__text-bg-color{
@@ -698,4 +697,45 @@ img{
 
 .page-top__link:hover{
     opacity: 0.8;
+}
+
+
+/*タブレット版*/
+
+@media screen and (min-width: 768px){
+    .header__cta-btn{
+        width: 200px;
+    }
+
+    /*メインビジュアル*/
+    .mv{
+        height: 500px;
+        padding-left: 5%;
+    }
+
+    .mv__img{
+        height: 500px;
+    }
+
+    .intro__title-br{
+        display: none;
+    }
+
+    .intro__textArea{
+        max-width: 720px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    /*トレーナー*/
+    .person-list{
+        display: grid;
+        column-gap: 15px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/*ウェブ版*/
+@media screen and (min-width: 1280px){
+    
 }
