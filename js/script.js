@@ -46,6 +46,40 @@ $(function(){
         },
         loop: true,
       });
+
+      /*スライドすると消える*/
+      $('.price-list').scroll(function(){
+        if ($(this).scrollLeft() > 20){
+          $('.price-list__scroll').fadeOut()
+        }
+      });
+
+      /*アコーディオン*/
+      $('.accordion__question').click(function(){
+        $(this).next('.accordion__answer').slideToggle(200);
+
+      });
+
+      $('.accordion__question-icon').click(function(){
+        $(this).toggleClass('selected');
+      });
+
+      /*page-topに戻る*/
+      $(window).scroll(function(){
+        if ($(this).scrollTop() > 200){
+          $('.page-top').fadeIn();
+        }else{
+          $('.page-top').fadeOut();
+        }
+      });
+
+      $('.page-top').on('click', function(){
+        $('body,html').animate({
+          scrollTop: 0
+        }, 200);
+        return false;
+      });
+
     
 });
 

@@ -574,3 +574,128 @@ img{
     font-size: 16px;
     font-weight: bold;
 }
+
+/*FAQ*/
+.accordion{
+    margin-top: -20px;
+}
+
+.accordion__item{
+    border-bottom: solid 1px #CCCCCC;
+}
+
+.accordion__question{
+    position: relative;
+    padding: 20px 30px 15px 0;
+    font-weight:normal;
+    cursor: pointer;
+}
+
+
+.accordion__question-icon{
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    font-size: 24px;
+    color: var(--main-color);
+    transform: translateY(-50%);
+}
+
+
+.accordion__question-inner,
+.accordion__answer-inner{
+    display: flex;
+    column-gap: 20px;
+}
+
+.accordion__label{
+    font-size: 26px;
+    flex: 0 0 25px;
+    color: var(--main-color);
+    font-weight: bold;
+    text-align: center;
+}
+
+.accordion__text{
+    font-size: 15px;
+    line-height: 1.6;
+    color:#111111;
+}
+
+.accordion__answer{
+    display: none;
+    padding-bottom: 20px;
+}
+
+.accordion__answer.answer{
+    display: block;
+}
+
+.accordion__question-icon.selected{
+	transform: translateY(-50%) rotate(180deg);
+    transition: 0.2s;
+}
+
+/*CTA*/
+
+.cta{
+    padding-top: 30px;
+}
+
+.cta__body{
+    text-align: center;
+    padding: 30px 20px;
+    background-color: var(--main-color);
+}
+
+.cta__title{
+    color: #FFFFFF;
+    font-size: 26px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.cta__img{
+    width: 100%
+}
+
+
+/*Footer*/
+.footer{
+    display: grid;
+    color: #FFFFFF;
+    background-color: #111111;
+    padding: 50px 20px;
+    place-items: center;
+}
+
+.page-top{
+    position: fixed;
+    right: 20px;
+    bottom: 15px;
+    z-index: 10;
+}
+
+.page-top__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    box-shadow: 0 0 10 0 rgba(0,0,0,0.2);
+    transition: opacity 0.3s;
+    cursor: pointer;
+}
+
+.page-top__link-icon{
+    color:var(--main-color);
+    font-size: 24px;
+}
+
+.page-top__link:hover{
+    opacity: 0.8;
+}
