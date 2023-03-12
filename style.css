@@ -16,7 +16,7 @@ body{
 
 img{
     max-width: 100%;
-    marigin: 0 auto;
+    margin: 0 auto;
     vertical-align: bottom;
 }
 
@@ -737,5 +737,91 @@ img{
 
 /*ウェブ版*/
 @media screen and (min-width: 1280px){
+    body{
+        font-size: 16px;
+    }
+
+    /*レイアウト*/
+
+    .mv{
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+
+    .about{
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+
+    .section{
+        padding: 30px 0;
+    }
+
+    /*ボタン*/
+    .btn{
+        font-size: 16px;
+        padding: 30px;
+    }
     
+    .btn:hover{
+        opacity: 0.8;
+    }
+
+    .btn--center{
+        max-width: 370px;
+    }
+    
+    /*見出し*/
+    .heading-primary{
+       font-size: 64px;
+    }
+
+    .heading-primary__subtitle{
+       font-size: 20px;
+       margin-top: 15px;
+    }
+
+    /*ヘッダー*/
+    .header{
+        height: 80px;
+        padding: 0 35px;
+    }
+
+    .header__cta-btn.btn{
+        width: 250px;
+        font-size: 15px;
+        padding: 15px;
+    }
+
+    .header__logo-img{
+        width: 180px;
+    }
+
+/*メインビジュアル*/
+.mv{
+    max-width: 1680px;
+    height: 680px;
+    padding-top: 220px;
+    padding-left: 12%;
+}
+
+.mv__title{
+    margin-bottom: 22px;
+}
+    
+.mv__subtitle{
+    margin-bottom: 32px;
+}
+    
+.mv__img{
+    height: 680px;
+    border-radius: 0 0 0 90px;
+}
+
+.mv__btn.btn{
+    width: 370px;
+}
+
+
+
 }
