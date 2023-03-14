@@ -43,7 +43,7 @@ img{
 
 .section-border-top{
     transform:translateY(35px);
-    width: 100%;
+    width:100%;
 }
 
 .section-border-bottom{
@@ -742,18 +742,7 @@ img{
     }
 
     /*レイアウト*/
-
-    .mv{
-        max-width: 1600px;
-        margin: 0 auto;
-    }
-
-    .about{
-        max-width: 1300px;
-        margin: 0 auto;
-    }
-
-    .section{
+    .container{
         padding: 30px 0;
     }
 
@@ -800,6 +789,7 @@ img{
 /*メインビジュアル*/
 .mv{
     max-width: 1680px;
+    margin:0 auto;
     height: 680px;
     padding-top: 220px;
     padding-left: 12%;
@@ -821,6 +811,177 @@ img{
 .mv__btn.btn{
     width: 370px;
 }
+
+/*イントロ*/
+
+.intro__title{
+    font-size: 108px;
+    margin-bottom: 5px;
+}
+
+.intro__subtitle{
+    font-size: 32px;
+    margin-bottom: 22px;
+}
+
+.intro__textArea{
+    font-size: 16px;
+}
+
+/*about section*/
+.about{
+    margin: 0 auto;
+}
+
+.about__list{
+    row-gap: 100px;
+}
+
+.about-box{
+    position: relative;
+}
+
+.about-box__img-wrapper{
+    width: 70%;
+}
+
+.about-box__desc{
+    position: absolute;
+    right:20px;
+    bottom: -20px;
+    margin:0;
+    width: 555px;
+    padding: 60px;
+}
+
+.about-box__subtitle{
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.about-box__title{
+    font-size: 32px;
+    margin-bottom: 22px;
+}
+
+.about-box__text{
+    font-size: 16px;
+}
+
+.about-box--reverse{
+    display: flex;
+    justify-content: right;
+}
+
+.about-box--reverse .about-box__desc{
+    left: 20px;
+}
+
+.about__btn{
+    margin-top: 70px;
+}
+
+/*トレーナー*/
+
+.tab{
+    font-size: 18px;
+    padding: 5px 0 20px 0;
+}
+
+.person-box__text{
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/*スタジオ*/
+.swiper-button-prev {
+    left: -50px;
+}
+
+.swiper-button-next {
+    right: 0px;
+}
+
+.swiper-button-prev,
+.swiper-button-next{
+    height: 80px;
+    width: 80px;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/*Price*/
+
+.price__body{
+    margin: 0;
+}
+
+.price-list{
+    display:grid;
+    padding-right:0;
+    column-gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.price-list__scroll{
+    display: none;
+}
+
+.price-box{
+   width: auto;
+   margin:0;
+}
+
+/*CTA*/
+
+.cta{
+    padding-top: 60px;
+}
+
+.cta__body{
+    padding: 50px 20px;
+}
+
+.cta__title{
+    font-size: 64px;
+    margin-bottom: 15px;
+}
+
+
+/*Footer*/
+.footer{
+    padding: 100px 20px;
+}
+
+.footer__logo-img{
+    width: 180px;
+}
+
+.page-top{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.page-top__link{
+    width: 80px;
+    height: 80px;
+}
+
+.page-top__link-icon{
+    font-size: 48px;
+}
+
+
+
+
+
+
+
 
 
 
