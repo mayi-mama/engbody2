@@ -168,13 +168,15 @@ img{
 .mv__title{
     font-size: min(11vw, 90px);
     font-style: Italic;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    line-height: 1;
 }
 
 .mv__subtitle{
     font-size: min(3.5vw, 28px);
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    line-height: 1;
 }
 
 .mv__text-bg-color{
@@ -975,14 +977,4 @@ img{
 .page-top__link-icon{
     font-size: 48px;
 }
-
-
-
-
-
-
-
-
-
-
 }
